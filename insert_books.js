@@ -20,11 +20,10 @@ async function insertBooks() {
         const database = client.db("plp_bookstore");
         const books = database.collection("books");
         
-        // First, clear any existing books to start fresh
         await books.deleteMany({});
         console.log("Cleared existing books");
         
-        // Insert sample books (same as before)
+        // Insert sample books
         const bookData = [
             {
                 title: "The Great Gatsby",
