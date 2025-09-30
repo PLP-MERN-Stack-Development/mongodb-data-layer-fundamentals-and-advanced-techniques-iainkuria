@@ -19,7 +19,7 @@ async function runQueries() {
         const database = client.db("plp_bookstore");
         const books = database.collection("books");
         
-        // All your queries here (same as before, but without the connection string)
+        // All your queries here
         console.log("=== TASK 2: BASIC CRUD OPERATIONS ===");
         
         // Find all books in a specific genre
